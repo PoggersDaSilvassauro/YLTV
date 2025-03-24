@@ -1,0 +1,215 @@
+:root {
+    --color-white: #fff;
+    --color-dark: #272727;
+    --color-header: #EFF3F2;
+    --color-shadowheader: rgb(192, 192, 192);
+    --color-shadowoptions: #dddddd;
+    --color-cyan: #EBFFFE;
+    --color-barra: #00EEFF;
+    --color-fontguia: #334C50;
+    --color-box: #D2DDE0;
+    --color-shadowbox: #bec2c4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Comic Neue';
+    src: url('fonts/ComicNeue.ttf') format('truetype');
+    font-weight: 155px;
+    font-size: 74px;
+}
+
+@font-face {
+    font-family: 'JustMeAgain';
+    src: url('JustMeAgainDownHere.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-image: linear-gradient(180deg, var(--color-white), var(--color-cyan));
+    color: var(--color-white);
+}
+
+h1 {
+    font-family: 'Just Me Again Down Here', cursive;
+}
+
+.YLTV {
+    width: 200px;
+}
+
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: var(--color-header);
+    height: 130px;
+    box-shadow: 1px 1px 4px var(--color-shadowheader);
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.navigation_header {
+    gap: 3em;
+    font-weight: 40px;
+    font-size: 25px;
+}
+
+.navigation_header a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.active:hover {
+    background-color: var(--color-shadowbox);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.active {
+    background-color: var(--color-shadowoptions);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lentes {
+    padding: 10px;
+    border-radius: 35px;
+    width: 1200px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 5em;
+    color: var(--color-dark);
+    height: 500vh;
+}
+
+.youtube {
+    margin: 0px 60px;
+    width: 64px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.boxes {
+    font-size: 46px;
+    font-family: 'Just Me Again Down Here';
+    color: var(--color-fontguia);
+    background-color: var(--color-box);
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.boxes a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.boxes:hover {
+    background-color: var(--color-shadowbox);
+    transition: 0.3s;
+}
+
+.spotify {
+    margin: 0px 60px;
+    width: 64px;
+}
+
+.linha1 {
+    width: 30%;
+    height: 1px;
+    background-color: var(--color-dark);
+    margin: 76px auto 50px;
+    border-radius: 0.5px;
+}
+
+.curiosidades {
+    font-family: 'Just Me Again Down Here';
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.caixa-de-texto1 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.texto1 {
+    padding: 25px;
+    text-align: left;
+}
+
+.linha2 {
+    width: 30%;
+    height: 1px;
+    background-color: var(--color-dark);
+    margin: 76px auto 50px;
+    border-radius: 0.5px;
+}
+
+.colaboradores {
+    font-family: 'Just Me Again Down Here';
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.imagens-piazada {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.imagens-piazada img {
+    width: 170px;
+    height: auto;
+    border-radius: 32px;
+}
+
+.imagens-piazada a {
+    display: block;
+    margin-top: 10px;
+    font-size: 60px;
+    color: var(--color-dark);
+}
+
+@media (max-width: 800px) {
+    .imagens-piazada {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
