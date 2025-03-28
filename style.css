@@ -9,6 +9,7 @@
     --color-fontguia: #334C50;
     --color-box: #D2DDE0;
     --color-shadowbox: #bec2c4;
+    --color-shadowbox2: #9da7ac;
 }
 
 * {
@@ -61,8 +62,9 @@ h1 {
 
 .navigation_header {
     gap: 3em;
-    font-weight: 40px;
+    font-weight: 400px;
     font-size: 25px;
+    font-style: normal;
 }
 
 .navigation_header a {
@@ -154,11 +156,13 @@ h1 {
 }
 
 .caixa-de-texto1 {
-    width: 1000px;
+    width: 875px;
     margin: 0 auto;
 }
 
 .texto1 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
     padding: 25px;
     text-align: left;
 }
@@ -225,4 +229,84 @@ h1 {
     background-color: var(--color-dark);
     margin: 76px auto 50px;
     border-radius: 0.5px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.container2 h2, h3 {
+    font-family: 'Just Me Again Down Here';
+    font-size: 40px;
+}
+
+.boxes1, .boxes2, .boxes3 {
+    background-color: var(--color-box);
+    padding: 10px 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 25px;
+}
+
+.boxes1 a, h3 {
+    background-color: var(--color-shadowbox);
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.boxes1 a, h3:hover {
+    background-color: var(--color-shadowbox2);
+    transition: 0.5s;
+}
+
+.boxes1 {
+    margin: 654px;
+    height: 607px;
+}
+
+.boxes1 p {
+    font-family: 'Comic Neue', cursive;
+    font-size: normal;
+    text-align: left;
+}
+
+.boxes2 img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.boxes3 img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.body-content {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #222222;
+    min-width: 1400px;
+    margin: 0 auto;
+    padding: 38px;
+    text-align: center;
+}
+
+footer .p1 {
+    margin: 0 500px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
 }
