@@ -310,3 +310,7 @@ footer .p1 {
     display: flex;
     justify-content: space-between;
 }
+
+.footer-container, .p1, .p2 {
+    font-size: 20px;
+}
