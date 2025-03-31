@@ -351,11 +351,13 @@ h1 {
 }
 
 .linha4 {
-    width: 70%;
-    height: 1px;
-    background-color: var(--color-dark);
-    border-radius: 0.5px;
     display: block;
+    background-color: var(--color-dark);
+    height: 1px;
+    width: 70%;
+    border-radius: 0.5px;
+    position: relative;
+    z-index: 1;
 }
 
 .mcvv img {
@@ -366,25 +368,17 @@ h1 {
     order: 1;
 }
 
-.boxes3 .vm {
-    width: 340px;
-    align-self: center;
-    margin-top: 23px;
-    line-height: 2.18
+.boxes3 p {
+    font-size: 18.8px;
 }
 
 .boxes3 .vm {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color-primary);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    top: 33px;
+    width: 340px;
+    align-self: center;
+    margin-top: 24px;
+    line-height: 2.18;
 }
 
 footer {
