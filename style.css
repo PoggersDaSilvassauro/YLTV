@@ -11,6 +11,7 @@
     --color-shadowbox: #bec2c4;
     --color-shadowbox2: #9da7ac;
     --color-shadowbox3: #ccd2d4;
+    --color-barradark: #00c5d3;
 }
 
 * {
@@ -33,10 +34,15 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Comic Neue', cursive;
     background-image: linear-gradient(180deg, var(--color-white), var(--color-cyan));
     color: var(--color-white);
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1 {
@@ -45,6 +51,8 @@ h1 {
 
 .YLTV {
     width: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 .header,
@@ -60,8 +68,6 @@ h1 {
     box-shadow: 1px 1px 4px var(--color-shadowheader);
     justify-content: space-between;
     padding: 0 5%;
-    position: sticky;
-    top: 0;
 }
 
 .navigation_header {
@@ -72,13 +78,13 @@ h1 {
 }
 
 .navigation_header a {
+    border-radius: 10px;
     text-decoration: none;
     color: var(--color-dark);
 }
 
 .active:hover {
     background-color: var(--color-shadowbox);
-    border-radius: 10px;
     transition: 0.5s;
 }
 
@@ -90,13 +96,46 @@ h1 {
     padding: 10px;
     border-radius: 35px;
     width: 1200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.acessibilidade {
+    font-size: normal;
+    background-color: var(--color-barra);
+    border-radius: 15px 15px 0 0;
+    right: 0;
+    transform: rotate(-90deg);
+    top: 50%;
+    width: 150px;
+    text-align: center;
+    position: fixed;
+    left: 1800px;
+    padding: 20px
+}
+
+.acessibilidade h3 {
+    color: var(--color-dark);
+}
+
+.acessibilidade a {
+    text-decoration: none;
+}
+
+.acessibilidade:hover {
+    background-color: var(--color-barradark);
+    transition: 0.5s;
 }
 
 .content {
+    min-height: 100vh;
     text-align: center;
     padding-top: 5em;
     color: var(--color-dark);
-    height: 420vh;
+    height: 3800px;
+    min-width: 300px;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .youtube {
@@ -360,7 +399,7 @@ h1 {
     width: 70%;
     border-radius: 0.5px;
     position: relative;
-    z-index: 0.5;
+    z-index: 1;
 }
 
 .mcvv img {
@@ -386,13 +425,14 @@ h1 {
 
 footer {
     background-color: #222222;
-    min-width: 1400px;
+    min-width: 1px;
     margin: 0 auto;
     padding: 38px;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 96%;
+    z-index: 1;
 }
 
 footer .p1 {
